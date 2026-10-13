@@ -1,0 +1,196 @@
+
+/*=============== ABOUT SECTION ===============*/
+
+.about {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Introduction */
+.about__intro {
+    max-width: 900px;
+    margin-inline: auto;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+/* Main title */
+.about__title {
+    color: var(--white-color);
+    font-size: var(--biggest-font-size);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Introduction text container */
+.about__info {
+    max-width: 800px;
+    margin-inline: auto;
+}
+
+/* Introduction description */
+.about__disc {
+    color: var(--text-color);
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    line-height: 1.8;
+    text-align: center;
+}
+
+/*=============== ABOUT CARDS ===============*/
+
+.about__container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+    max-width: 1380px;
+    margin-inline: auto;
+}
+
+/* Individual card */
+.about__card {
+    position: relative;
+    min-width: 0;
+    background-color: var(--container-color);
+    padding: 1.5rem 1.5rem 2rem;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    text-align: left;
+}
+
+/* Image container */
+.about__link {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    z-index: 2;
+}
+
+/* Card image */
+.about__img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 1rem;
+    transition: transform 0.4s ease;
+}
+
+/* Image hover effect */
+.about__card:hover .about__img {
+    transform: scale(1.08);
+}
+
+/* Card content */
+.about__data {
+    position: relative;
+    z-index: 2;
+}
+
+/* Number */
+.about__number {
+    display: block;
+    color: var(--first-color);
+    font: var(--font-semi-bold)
+          var(--bigger-font-size)
+          var(--second-font);
+    margin-bottom: 0.5rem;
+}
+
+/* Card heading */
+.about__name {
+    color: var(--white-color);
+    font-size: var(--h2-font-size);
+    margin-bottom: 0.75rem;
+}
+
+/* Card description */
+.about__description {
+    color: var(--text-color);
+    font-size: var(--normal-font-size);
+    line-height: 1.8;
+    margin-top: 0.5rem;
+}
+
+/* Decorative blob */
+.about__card .blob-big {
+    position: absolute;
+    top: 2rem;
+    right: -2rem;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/*=============== RESPONSIVE DESIGN ===============*/
+
+/* Tablets */
+@media screen and (max-width: 968px) {
+    .about__container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.5rem;
+    }
+
+    .about__card {
+        padding: 1.25rem 1.25rem 2rem;
+    }
+
+    .about__img {
+        height: 200px;
+    }
+
+    .about__card:last-child {
+        grid-column: 1 / -1;
+        width: calc(50% - 0.75rem);
+        justify-self: center;
+    }
+}
+
+/* Mobile phones */
+@media screen and (max-width: 600px) {
+    .about__intro {
+        margin-bottom: 2rem;
+    }
+
+    .about__title {
+        font-size: var(--bigger-font-size);
+    }
+
+    .about__disc {
+        font-size: var(--normal-font-size);
+    }
+
+    .about__container {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 1.5rem;
+    }
+
+    .about__card,
+    .about__card:last-child {
+        grid-column: auto;
+        width: 100%;
+        justify-self: stretch;
+    }
+
+    .about__img {
+        height: 220px;
+    }
+}
+
+/* Large desktop screens */
+@media screen and (min-width: 1150px) {
+    .about__intro {
+        margin-bottom: 4rem;
+    }
+
+    .about__card {
+        padding: 1.5rem 1.5rem 2.5rem;
+        border-radius: 2rem;
+    }
+
+    .about__img {
+        height: 250px;
+    }
+}

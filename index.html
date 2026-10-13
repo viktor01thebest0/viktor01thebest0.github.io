@@ -1,50 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="My ICT portfolio website">
-        <title>Home | My ICT Portfolio</title>
 
-        <link rel="stylesheet" href="css/styles.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Experienced professional offering high-quality digital and creative services. Discover my portfolio and work with me to turn your ideas into impactful results.">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <body>
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="/img/gemini-svg.svg" type="image/x-icon">
 
-        <header>
-            <nav>
-                <a href="index.html" class=" active">Home</a>
-                <a href="profile.html">Who Am I?</a>
-                <a href="why-it.html">Why IT?</a>
-                <a href="dashboard.html">Dashboard</a>
-                <a href="blog.html">Blog</a>
-            </nav>
-        </header>
+    <!--=============== REMIXICONS - Insert link for icons ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css">
 
-        <main>
+    <!--=============== SWIPER CSS - Insert link for swiperjs ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
 
-            <section>
-                <h1>Welcome to my ICT portfolio</h1>
-                <p>ICT student and AI crunch</p>
-            </section>
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="/css/styles.css">
 
-            <section>
-                <!-- Image, video or audio -->
-            </section>
+    <title>Portfolio website</title>
+</head>
 
-            <section>
-                <!-- List or table -->
-            </section>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="/index.html" class="nav__logo">HZ</a>
 
-            <section>
-                <!-- Link -->
-            </section>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li>
+                        <a href="/index.html" class="nav__link">Home</a>
+                    </li>
+                    <li>
+                        <a href="/about.html" class="nav__link">Who am I?</a>
+                    </li>
+                    <li>
+                        <a href="/why-it.html" class="nav__link">Why IT?</a>
+                    </li>
+                    <li>
+                        <a href="/dashboard.html" class="nav__link">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="/blog.html" class="nav__link">Blog</a>
+                    </li>
+                </ul>
+                <button class="nav__close" id="nav-close" aria-label="Close menu">
+                    <i class="ri-close-large-line"></i>
+                </button>
+            </div>
+            <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
+                <i class="ri-menu-line"></i>
+            </button>
+        </nav>
+    </header>
 
-        </main>
+    <main class="main">
+        <section class="home section" id="home">
+            <div class="blob-small"></div>
+            <div class="blob-small"></div>
 
-        <footer>
-            <p>© 2026 My ICT Portfolio</p>
-        </footer>
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <h3 class="home__subtitle">
+                        Hi I'm Viktor - Based in Netherlands
+                    </h3>
 
-    </body>
+                    <h1 class="home__title">
+                        International ICT student &
+                        <span class="home-typed">
+                            Future Web Developer
+                        </span>
+                    </h1>
+
+                    <p class="home__description">
+                        I am a passionate and dedicated ICT student with a strong interest in web development. I enjoy
+                        creating innovative and user-friendly websites that provide seamless experiences for users. With
+                        a solid foundation in programming languages and web technologies, I am constantly seeking
+                        opportunities to expand my skills and stay up-to-date with the latest industry trends.
+                    </p>
+                </div>
+
+                <div class="home__images">
+                    <div class="home__box-1"></div>
+                    <div class="home__box-2"></div>
+                    <div class="home__box-3"></div>
+
+                    <img src="/img/hz_logo-removebg-removebg-preview.png" alt="Digital professional portrait"
+                        class="home__img">
+
+                    <div class="home__circle">
+                        <span class="home__text" id="home-text">
+                            EXPLORE - MORE - LET'S -
+                        </span>
+                        <a href="/about.html" class="home__arrow">
+                            <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </div>
+
+                    <div class="blob-big"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__row">
+                <h2 class="footer__title">Professional student</h2>
+
+                <div class="footer__right-group">
+                    <ul class="footer__links">
+                        <li>
+                            <a href="index.html" class="footer__link">Home</a>
+                        </li>
+                        <li>
+                            <a href="blog.html" class="footer__link">Blog</a>
+                        </li>
+                        <li>
+                            <a href="about.html" class="footer__link">Who am I?</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__social">
+                        <li>
+                            <a href="https://www.instagram.com/viktor01thebest0" target="_blank"
+                                class="footer__social-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.tiktok.com/@vikiblagoev?lang=en" target="_blank"
+                                class="footer__social-link">
+                                <i class="ri-tiktok-fill"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/viktor01thebest0" target="_blank" class="footer__social-link">
+                                <i class="ri-github-fill"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <small class="footer__copy">&#169; All Rights Reserved By Viktor Blagoev</small>
+        </div>
+        <div class="blob-big"></div>
+    </footer>
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+
+    <!--=============== TYPED JS - Insert link for text animations ===============-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.min.js"></script>
+
+    <!--=============== SWIPER JS - Insert link for swiperjs ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!--=============== EMAIL JS - Insert link to send emails ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <!--JavaScript-->
+    <script src="/js/main.js"></script>
+</body>
+
 </html>

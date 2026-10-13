@@ -1,68 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="My future direction in ICT">
-        <title>My Direction | My ICT Portfolio</title>
 
-        <link rel="stylesheet" href="css/styles.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Experienced professional offering high-quality digital and creative services. Discover my portfolio and work with me to turn your ideas into impactful results.">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <body>
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
 
-        <header>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="profile.html">Who Am I?</a>
-                <a href="why-it.html">Why IT?</a>
-                <a href="dashboard.html">Dashboard</a>
-                <a href="blog.html">Blog</a>
-            </nav>
-        </header>
+    <!--=============== REMIXICONS - Insert link for icons ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css">
 
-        <main>
+    <!--=============== SWIPER CSS - Insert link for swiperjs ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
 
-            <article>
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="/css/styles.css">
 
-                <header>
-                    <h1>My Direction</h1>
-                </header>
+    <title>Portfolio website</title>
+</head>
 
-                <p>...</p>
+<body>
+ <header class="header" id="header">
+        <nav class="nav container">
+            <a href="/index.html" class="nav__logo">HZ</a>
 
-                <section>
-                    <h2>Where I See Myself in the Future</h2>
-                    <p>nowhere</p>
-                </section>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li>
+                        <a href="/index.html" class="nav__link">Home</a>
+                    </li>
+                    <li>
+                        <a href="/about.html" class="nav__link">Who am I?</a>
+                    </li>
+                    <li>
+                        <a href="/why-it.html" class="nav__link">Why IT?</a>
+                    </li>
+                    <li>
+                        <a href="/dashboard.html" class="nav__link">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="/blog.html" class="nav__link">Blog</a>
+                    </li>
+                </ul>
+                <button class="nav__close" id="nav-close" aria-label="Close menu">
+                    <i class="ri-close-large-line"></i>
+                </button>
+            </div>
+            <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
+                <i class="ri-menu-line"></i>
+            </button>
+        </nav>
+    </header>
 
-                <section>
-                    <h2>My Career Direction</h2>
-                    <p>nowhere</p>
-                </section>
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__row">
+                <h2 class="footer__title">Professional student</h2>
 
-                <section>
-                    <h2>What I Want to Achieve</h2>
-                    <p>nothing</p>
-                </section>
+                <div class="footer__right-group">
+                    <ul class="footer__links">
+                        <li>
+                            <a href="index.html" class="footer__link">Home</a>
+                        </li>
+                        <li>
+                            <a href="blog.html" class="footer__link">Blog</a>
+                        </li>
+                        <li>
+                            <a href="about.html" class="footer__link">Who am I?</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__social">
+                        <li>
+                            <a href="https://www.instagram.com/viktor01thebest0" target="_blank"
+                                class="footer__social-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.tiktok.com/@vikiblagoev?lang=en" target="_blank"
+                                class="footer__social-link">
+                                <i class="ri-tiktok-fill"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/viktor01thebest0" target="_blank" class="footer__social-link">
+                                <i class="ri-github-fill"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
-                <section>
-                    <h2>Skills I Want to Develop</h2>
-                    <p>none</p>
-                </section>
+            <small class="footer__copy">&#169; All Rights Reserved By Viktor Blagoev</small>
+        </div>
+        <div class="blob-big"></div>
+    </footer>
 
-                <section>
-                    <h2>My Future Goals</h2>
-                    <p>dont have</p>
-                </section>
+</body>
 
-            </article>
-
-        </main>
-
-        <footer>
-            <p>© 2026 My ICT Portfolio</p>
-        </footer>
-
-    </body>
 </html>

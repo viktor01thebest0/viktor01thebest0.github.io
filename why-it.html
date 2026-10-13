@@ -1,58 +1,316 @@
+
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Why I chose IT and ICT">
-        <title>Why IT? | My ICT Portfolio</title>
 
-        <link rel="stylesheet" href="css/styles.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Discover why I chose IT, what motivates me, and my goals in technology.">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <body>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
 
-        <header>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="profile.html">Who Am I?</a>
-                <a href="why-it.html" class=" active">Why IT?</a>
-                <a href="dashboard.html">Dashboard</a>
-                <a href="blog.html">Blog</a>
-            </nav>
-        </header>
+    <!-- Remix Icons -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css">
 
-        <main>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
 
-            <section>
-                <h1>Why IT?</h1>
-                <p>because i love working with computers</p>
-            </section>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="/css/styles.css">
 
-            <section>
-                <h2>Why I Chose ICT</h2>
-                <p>Because i wanted to continue my eduction in the filed of coding and programming.</p>
-            </section>
+    <!-- Why IT CSS -->
+    <link rel="stylesheet" href="/css/why-it.css">
 
-            <section>
-                <h2>What I Want to Learn</h2>
-                <p>software development and programming</p>
-            </section>
+    <title>Why IT? | Portfolio</title>
+</head>
 
-            <section>
-                <h2>My Expectations</h2>
-                <p>I expect to gain a solid foundation in programming and software development.</p>
-            </section>
+<body>
 
-            <section>
-                <h2>My Goals</h2>
-                <p>My goal is to become a proficient software developer.</p>
-            </section>
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <nav class="nav container">
 
-        </main>
+            <a href="/index.html" class="nav__logo">HZ</a>
 
-        <footer>
-            <p>© 2026 My ICT Portfolio</p>
-        </footer>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li>
+                        <a href="/index.html" class="nav__link">Home</a>
+                    </li>
+                    <li>
+                        <a href="/about.html" class="nav__link">Who am I?</a>
+                    </li>
+                    <li>
+                        <a href="/why-it.html"
+                            class="nav__link"
+                            aria-current="page">Why IT?</a>
+                    </li>
+                    <li>
+                        <a href="/dashboard.html" class="nav__link">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="/blog.html" class="nav__link">Blog</a>
+                    </li>
+                </ul>
 
-    </body>
+                <button class="nav__close" id="nav-close"
+                    aria-label="Close menu">
+                    <i class="ri-close-large-line"></i>
+                </button>
+            </div>
+
+            <button class="nav__toggle" id="nav-toggle"
+                aria-label="Open menu">
+                <i class="ri-menu-line"></i>
+            </button>
+
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main class="main">
+
+        <section class="why-it section" id="why-it">
+
+            <h2 class="why-it__title">WHY IT?</h2>
+
+            <div class="why-it__container container">
+
+                <!-- SWIPER -->
+                <div class="why-it__swiper swiper">
+
+                    <div class="swiper-wrapper">
+
+                        <!-- CARD 1 -->
+                        <article class="why-it__card swiper-slide">
+
+                            <a href="#"
+                                class="why-it__link">
+                                <img src="/img/education.jpg"
+                                    alt="IT education"
+                                    class="why-it__img">
+                            </a>
+
+                            <div class="why-it__data">
+                                <span class="why-it__number">01</span>
+
+                                <h3 class="why-it__name">
+                                    Motivations
+                                </h3>
+
+                                <p class="why-it__description">
+                                    Explain what motivates you to study
+                                    information technology and develop
+                                    your technical skills.
+                                </p>
+                            </div>
+
+                            <div class="blob-big"></div>
+
+                        </article>
+
+                        <!-- CARD 2 -->
+                        <article class="why-it__card swiper-slide">
+
+                            <a href="#"
+                                class="why-it__link">
+                                <img src="/img/education.jpg"
+                                    alt="Learning technology"
+                                    class="why-it__img">
+                            </a>
+
+                            <div class="why-it__data">
+                                <span class="why-it__number">02</span>
+
+                                <h3 class="why-it__name">
+                                    My Interests
+                                </h3>
+
+                                <p class="why-it__description">
+                                    Describe the parts of technology
+                                    that interest you most, such as
+                                    programming and web development.
+                                </p>
+                            </div>
+
+                            <div class="blob-big"></div>
+
+                        </article>
+
+                        <!-- CARD 3 -->
+                        <article class="why-it__card swiper-slide">
+
+                            <a href="#"
+                                class="why-it__link">
+                                <img src="/img/education.jpg"
+                                    alt="Computer programming"
+                                    class="why-it__img">
+                            </a>
+
+                            <div class="why-it__data">
+                                <span class="why-it__number">03</span>
+
+                                <h3 class="why-it__name">
+                                    Creativity
+                                </h3>
+
+                                <p class="why-it__description">
+                                    Explain how IT allows you to turn
+                                    ideas into useful websites,
+                                    applications, and digital projects.
+                                </p>
+                            </div>
+
+                            <div class="blob-big"></div>
+
+                        </article>
+
+                        <!-- CARD 4 -->
+                        <article class="why-it__card swiper-slide">
+
+                            <a href="#"
+                                class="why-it__link">
+                                <img src="/img/education.jpg"
+                                    alt="Technology and innovation"
+                                    class="why-it__img">
+                            </a>
+
+                            <div class="why-it__data">
+                                <span class="why-it__number">04</span>
+
+                                <h3 class="why-it__name">
+                                    Future Goals
+                                </h3>
+
+                                <p class="why-it__description">
+                                    Describe the skills you want to
+                                    develop and the career you hope
+                                    to build in the IT industry.
+                                </p>
+                            </div>
+
+                            <div class="blob-big"></div>
+
+                        </article>
+
+                        <!-- CARD 5 -->
+                        <article class="why-it__card swiper-slide">
+
+                            <a href="#"
+                                class="why-it__link">
+                                <img src="/img/education.jpg"
+                                    alt="Digital technology"
+                                    class="why-it__img">
+                            </a>
+
+                            <div class="why-it__data">
+                                <span class="why-it__number">05</span>
+
+                                <h3 class="why-it__name">
+                                    Opportunities
+                                </h3>
+
+                                <p class="why-it__description">
+                                    Discuss the opportunities IT
+                                    offers, from working on innovative
+                                    projects to solving real-world problems.
+                                </p>
+                            </div>
+
+                            <div class="blob-big"></div>
+
+                        </article>
+
+                    </div>
+
+                    <!-- SWIPER PAGINATION -->
+                    <div class="swiper-pagination"></div>
+
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer__container container">
+
+            <div class="footer__row">
+
+                <h2 class="footer__title">Professional student</h2>
+
+                <div class="footer__right-group">
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="/index.html" class="footer__link">Home</a>
+                        </li>
+                        <li>
+                            <a href="/blog.html" class="footer__link">Blog</a>
+                        </li>
+                        <li>
+                            <a href="/about.html" class="footer__link">
+                                Who am I?
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="footer__social">
+                        <li>
+                            <a href="https://www.instagram.com/viktor01thebest0"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="footer__social-link"
+                                aria-label="Instagram">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.tiktok.com/@vikiblagoev?lang=en"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="footer__social-link"
+                                aria-label="TikTok">
+                                <i class="ri-tiktok-fill"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://github.com/viktor01thebest0"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="footer__social-link"
+                                aria-label="GitHub">
+                                <i class="ri-github-fill"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <small class="footer__copy">
+                &#169; All Rights Reserved By Viktor Blagoev
+            </small>
+
+        </div>
+
+        <div class="blob-big"></div>
+
+    </footer>
+
+    <!-- SWIPER JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="/js/main.js"></script>
+
+</body>
 </html>
